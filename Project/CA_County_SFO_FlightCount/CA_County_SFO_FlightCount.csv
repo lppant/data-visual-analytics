@@ -1,0 +1,15 @@
+COUNTY,COVID_MEASURE_TYPE,SFO_FLIGHT_COUNT
+Los Angeles,High,30
+San Diego,High,11
+Orange,High,8
+Riverside,High,7
+San Bernardino,High,3
+Sacramento,High,3
+Santa Barbara,Medium,2
+Humboldt,Low,2
+Fresno,High,2
+San Luis Obispo,Medium,2
+Kern,Medium,1
+Alameda,Medium,1
+Shasta,Medium,1
+Santa Clara,High,1

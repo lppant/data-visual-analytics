@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f2053ca2-eaf9-43fb-98d0-4d699b510672" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="JupyterTrust" id="dff9dea6-9b54-4f57-82b6-81c3f612096c" />
+  <component name="ProjectId" id="1jPrQsvV3pr4AdOD8vP92JDVe4p" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Q3" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Q3" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Q3" />
+      <recent name="$PROJECT_DIR$/Q3/old" />
+      <recent name="$PROJECT_DIR$/Q3/latest" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.tests">
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <module name="hw4-skeleton" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pagerank" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="hw4-skeleton" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Q1" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Q1/pagerank.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="tests" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="hw4-skeleton" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Q3" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Q3/tests.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.tests" />
+        <item itemvalue="Python.pagerank" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f2053ca2-eaf9-43fb-98d0-4d699b510672" name="Default Changelist" comment="" />
+      <created>1603716554815</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1603716554815</updated>
+      <workItem from="1603716571443" duration="324000" />
+      <workItem from="1604020677253" duration="2000" />
+      <workItem from="1604483137184" duration="793000" />
+      <workItem from="1604732704798" duration="3414000" />
+      <workItem from="1605070799504" duration="15282000" />
+      <workItem from="1605279947449" duration="6063000" />
+      <workItem from="1605363307007" duration="4304000" />
+      <workItem from="1605419612650" duration="18324000" />
+      <workItem from="1605492337597" duration="5766000" />
+      <workItem from="1605503847673" duration="1368000" />
+      <workItem from="1605505689190" duration="1815000" />
+      <workItem from="1605507792430" duration="5077000" />
+      <workItem from="1606023023854" duration="499000" />
+      <workItem from="1606267916848" duration="2240000" />
+      <workItem from="1606270877856" duration="2716000" />
+      <workItem from="1607994173145" duration="525000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="100" y="100" width="1240" height="700" maximized="true" key="DiffContextDialog" timestamp="1606273464875">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="100" y="100" width="1240" height="700" maximized="true" key="DiffContextDialog/0.0.1440.900@0.0.1440.900" timestamp="1606273464875" />
+    <state x="100" y="114" width="1240" height="640" key="DiffContextDialog/0.23.1440.822@0.23.1440.822" timestamp="1606268361423" />
+    <state x="100" y="114" width="1240" height="641" key="DiffContextDialog/0.23.1440.823@0.23.1440.823" timestamp="1606269772338" />
+    <state width="1398" height="245" key="GridCell.Tab.0.bottom" timestamp="1606408951869">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1606408951869" />
+    <state width="1398" height="245" key="GridCell.Tab.0.center" timestamp="1606408951867">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="245" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1606408951867" />
+    <state width="1398" height="245" key="GridCell.Tab.0.left" timestamp="1606408951732">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="245" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1606408951732" />
+    <state width="1398" height="245" key="GridCell.Tab.0.right" timestamp="1606408951868">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1606408951868" />
+    <state x="180" y="105" key="SettingsEditor" timestamp="1605502111113">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="180" y="105" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1605502111113" />
+    <state x="100" y="114" width="1240" height="640" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1606268780088">
+      <screen x="0" y="23" width="1440" height="822" />
+    </state>
+    <state x="100" y="100" width="1240" height="700" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1440.900@0.0.1440.900" timestamp="1605454155121" />
+    <state x="100" y="114" width="1240" height="640" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.23.1440.822@0.23.1440.822" timestamp="1606268780088" />
+    <state x="385" y="73" width="670" height="730" key="search.everywhere.popup" timestamp="1605457783047">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="385" y="73" width="670" height="730" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1605457783047" />
+    <state x="385" y="91" width="670" height="676" key="search.everywhere.popup/0.23.1440.834@0.23.1440.834" timestamp="1605394019657" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/hw4_skeleton$pagerank.coverage" NAME="pagerank Coverage Results" MODIFIED="1605284894565" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Q1" />
+    <SUITE FILE_PATH="coverage/hw4_skeleton$tests.coverage" NAME="tests Coverage Results" MODIFIED="1606271726373" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Q3" />
+  </component>
+</project>

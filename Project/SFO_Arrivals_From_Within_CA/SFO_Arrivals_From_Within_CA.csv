@@ -1,0 +1,75 @@
+COUNTY,IATA,TIME,FLIGHT,FROM_AIRPORT,AIRLINE,AIRCRAFT,STATUS,14_DAY_AVERAGE,COVID_MEASURE_TYPE
+Los Angeles,LAX,0:30,OZ285,Los Angeles ,Asiana Airlines,B741,Scheduled,1434,High
+Los Angeles,LAX,0:30,OZ286,Los Angeles ,Asiana Airlines,B741,Scheduled,1434,High
+Los Angeles,LAX,1:25,KE214,Los Angeles ,Korean Air,B744,Scheduled,1434,High
+San Bernardino,ONT,7:34,UA5572,Ontario ,United Express,E75L (N119SY),Scheduled,420,High
+Humboldt,ACV,7:38,UA5313,Arcata ,United Express,E75L (N116SY),Scheduled,2,Low
+Kern,BFL,7:38,UA5631,Bakersfield ,United Express,E75L (N621UX),Scheduled,92,Medium
+San Luis Obispo,SBP,7:38,UA5882,San Luis Obispo ,United Express,CRJ2 (N652BR),Scheduled,31,Medium
+Sacramento,SMF,7:44,UA5324,Sacramento ,United Express,E75L (N146SY),Scheduled,162,High
+Santa Barbara,SBA,7:44,UA5819,Santa Barbara ,United Express,E75L (N202SY),Scheduled,26,Medium
+Los Angeles,LAX,7:56,AS2120,Los Angeles ,Alaska Horizon,E75L (N638QX),Scheduled,1434,High
+Los Angeles,LAX,8:25,WN819,Los Angeles ,Southwest Airlines,B737 (N267WN),Scheduled,1434,High
+San Diego,SAN,8:26,AS3461,San Diego ,Alaska SkyWest,E75L (N400SY),Scheduled,371,High
+Los Angeles,BUR,8:40,WN261,Burbank ,Southwest Airlines,B737 (N276WN),Scheduled,1434,High
+San Diego,SAN,9:10,WN1391,San Diego ,Southwest Airlines,B737 (N553WN),Scheduled,371,High
+Riverside,PSP,9:20,UA5997,Palm Springs ,United Express,CRJ2 (N982SW),Scheduled,350,High
+San Diego,SAN,9:22,UA2480,San Diego ,United Airlines,B738 (N76526),Scheduled,371,High
+Los Angeles,BUR,9:26,UA5276,Burbank ,United Express,E75L (N128SY),Scheduled,1434,High
+Orange,SNA,9:27,AS3317,Santa Ana ,Alaska SkyWest,E75L (N195SY),Scheduled,247,High
+Fresno,FAT,9:30,UA5874,Fresno ,United Express,CRJ2 (N916EV),Scheduled,121,High
+Orange,SNA,9:32,UA753,Santa Ana ,United Airlines,A320 (N468UA),Scheduled,247,High
+Shasta,RDD,9:37,UA4714,Redding ,United Express,CRJ2 (N947SW),Scheduled,45,Medium
+Los Angeles,LAX,9:45,UA501,Los Angeles ,United Airlines,B739 (N75429),Scheduled,1434,High
+Riverside,PSP,9:52,AS3367,Palm Springs ,Alaska SkyWest,E75L (N188SY),Scheduled,350,High
+Los Angeles,LAX,9:55,DL3501,Los Angeles ,Delta Connection,E75L (N263SY),Scheduled,1434,High
+Los Angeles,LAX,10:46,AS3435,Los Angeles ,Alaska SkyWest,E75L (N174SY),Scheduled,1434,High
+San Diego,SAN,11:26,AS3413,San Diego ,Alaska SkyWest,E75L (N403SY),Scheduled,371,High
+Sacramento,SMF,11:54,UA5697,Sacramento ,United Express,E75L (N109SY),Scheduled,162,High
+Los Angeles,LAX,11:55,AA3179,Los Angeles ,American Eagle,CRJ7 (N740SK),Scheduled,1434,High
+San Diego,SAN,11:59,UA390,San Diego ,United Airlines,B739 (N61881),Scheduled,371,High
+San Bernardino,ONT,12:09,UA5416,Ontario ,United Express,CRJ7 (N780SK),Scheduled,420,High
+Orange,SNA,12:17,UA5468,Santa Ana ,United Express,E75L (N146SY),Scheduled,247,High
+Los Angeles,LAX,12:57,DL3710,Los Angeles ,Delta Connection,E75L (N275SY),Scheduled,1434,High
+Orange,SNA,13:17,AS3305,Santa Ana ,Alaska SkyWest,E75L (N192SY),Scheduled,247,High
+Los Angeles,LAX,13:20,CI5107,Los Angeles ,China Airlines,74Y,Scheduled,1434,High
+Riverside,PSP,13:33,FTH452,Palm Springs ,-,CJL,Scheduled,350,High
+Los Angeles,BUR,14:14,FTH200,Burbank ,-,CN7,Scheduled,1434,High
+Los Angeles,LAX,14:16,AS3343,Los Angeles ,Alaska SkyWest,E75L (N188SY),Scheduled,1434,High
+Los Angeles,LAX,14:25,WN1037,Los Angeles ,Southwest Airlines,B737 (N492WN),Scheduled,1434,High
+San Diego,SAN,14:26,AS3389,San Diego ,Alaska SkyWest,E75L (N195SY),Scheduled,371,High
+Riverside,PSP,14:47,AS3340,Palm Springs ,Alaska SkyWest,E75L (N194SY),Scheduled,350,High
+Los Angeles,LAX,14:55,UA421,Los Angeles ,United Airlines,B738 (N12225),Scheduled,1434,High
+Santa Clara,SJC,15:06,1I645,San Jose ,NetJets,C68A,Scheduled,"",High
+Riverside,PSP,15:08,UA5455,Palm Springs ,United Express,E75L (N127SY),Scheduled,350,High
+Santa Barbara,SBA,15:14,UA5281,Santa Barbara ,United Express,CRJ7 (N790SK),Scheduled,26,Medium
+Orange,SNA,15:17,AS3430,Santa Ana ,Alaska SkyWest,E75L (N174SY),Scheduled,247,High
+Humboldt,ACV,15:23,UA5386,Arcata ,United Express,E75L (N120SY),Scheduled,2,Low
+Orange,SNA,15:26,GAJ880,Santa Ana ,Gama Aviation,B350,Scheduled,247,High
+Los Angeles,LAX,15:30,AA3183,Los Angeles ,American Eagle,CRJ7 (N746SK),Scheduled,1434,High
+Alameda,OAK,15:30,1I373,Oakland ,NetJets,E55P,Scheduled,96,Medium
+Fresno,FAT,15:35,UA5395,Fresno ,United Express,CRJ2 (N916EV),Scheduled,121,High
+Los Angeles,LAX,16:13,DL3643,Los Angeles ,Delta Connection,E75L (N292SY),Scheduled,1434,High
+San Diego,SAN,16:55,WN1075,San Diego ,Southwest Airlines,B738 (N8318F),Scheduled,371,High
+San Bernardino,ONT,17:11,UA5255,Ontario ,United Express,E75L (N213SY),Scheduled,420,High
+Riverside,PSP,17:13,UA5264,Palm Springs ,United Express,E75L (N109SY),Scheduled,350,High
+Sacramento,SMF,17:14,UA5559,Sacramento ,United Express,CRJ2 (N982SW),Scheduled,162,High
+San Luis Obispo,SBP,17:17,UA5777,San Luis Obispo ,United Express,CRJ2 (N973SW),Scheduled,31,Medium
+San Diego,SAN,17:23,UA2482,San Diego ,United Airlines,B739 (N47414),Scheduled,371,High
+Riverside,PSP,17:27,AS3379,Palm Springs ,Alaska SkyWest,E75L (N192SY),Scheduled,350,High
+Orange,SNA,17:28,UA5926,Santa Ana ,United Express,CRJ7 (N780SK),Scheduled,247,High
+Los Angeles,LAX,17:30,UA1548,Los Angeles ,United Airlines,B738 (N87531),Scheduled,1434,High
+Los Angeles,LAX,18:20,AS3400,Los Angeles ,Alaska SkyWest,E75L (N187SY),Scheduled,1434,High
+Los Angeles,LAX,18:21,DL3572,Los Angeles ,Delta Connection,E75L (N302SY),Scheduled,1434,High
+Los Angeles,BUR,18:40,WN1254,Burbank ,Southwest Airlines,B738 (N8618N),Scheduled,1434,High
+Los Angeles,LAX,19:25,B62736,Los Angeles ,JetBlue Airways,A320 (N827JB),Scheduled,1434,High
+Orange,SNA,19:30,AS3453,Santa Ana ,Alaska SkyWest,E75L (N170SY),Scheduled,247,High
+Los Angeles,LAX,20:00,AS3325,Los Angeles ,Alaska SkyWest,E75L (N195SY),Scheduled,1434,High
+San Diego,SAN,20:00,AS3361,San Diego ,Alaska SkyWest,E75L (N402SY),Scheduled,371,High
+Los Angeles,LAX,20:24,UA1666,Los Angeles ,United Airlines,A320 (N468UA),Scheduled,1434,High
+Los Angeles,LAX,20:45,WN227,Los Angeles ,Southwest Airlines,B738 (N8574Z),Scheduled,1434,High
+San Diego,SAN,21:18,UA5279,San Diego ,United Express,E75L (N127SY),Scheduled,371,High
+San Diego,SAN,21:25,WN1320,San Diego ,Southwest Airlines,B738 (N8682B),Scheduled,371,High
+Los Angeles,LAX,22:05,DL3557,Los Angeles ,Delta Connection,E75L (N275SY),Scheduled,1434,High
+Los Angeles,LAX,22:25,AS3479,Los Angeles ,Alaska SkyWest,E75L (N187SY),Scheduled,1434,High
+Los Angeles,LAX,22:38,AA3202,Los Angeles ,American Eagle,CRJ7 (N740SK),Scheduled,1434,High

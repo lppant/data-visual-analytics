@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+
+<!-- run: http-server & -->
+
+<head>
+  <style>
+    <!-- define CSS rules -->
+  </style>
+  <title>Running Total of TMDb Movies by Year</title>
+</head>
+
+<body>
+  <!--<title>Running Total of TMDb Movies by Year</title> --->
+
+  <script src="lib/d3/d3.min.js"></script>
+  <script src="lib/d3-dsv/d3-dsv.min.js"></script>
+  <script src="lib/d3-fetch/d3-fetch.min.js"></script>
+
+
+  <script>
+    // define the dimensions and margins for the graph
+    var width = 1100;
+    var height = 300;
+    var width_offset = 70;
+    var height_offset = 80;
+    var y_padding = 70;
+
+
+    // define function to parse time in years format
+    var parseTimeInYear = d3.timeParse('%Y');
+
+    // create scales x & y for X and Y axis and set their ranges
+    var x_scale_data = d3.scaleTime().domain([parseTimeInYear(1884), parseTimeInYear(2010)]).range([1, 700]);
+    var y_scale_data = d3.scaleLinear().domain([0, 160885]).range([0, 140]);
+
+    var x_scale_axis = d3.scaleTime().domain([parseTimeInYear(1884), parseTimeInYear(2010)]).range([1, 700]);
+    var x_axis = d3.axisBottom().scale(x_scale_axis).ticks(10);
+
+    var y_scale_axis = d3.scaleLinear().domain([0, 160885]).range([140, 0]);
+    var y_axis = d3.axisLeft().scale(y_scale_axis).ticks(10);
+
+
+    // append svg element to the body of the page
+    // set dimensions and position of the svg element
+    var svg = d3.select("body").append("svg")
+    .attr("width", width)
+    .attr("height", height);
+
+
+    // Get the data
+	var pathToCsv = "q3.csv";		// path to csv
+	
+    d3.dsv(",", pathToCsv, function (d) {
+      return {
+        // format data attributes if required
+        year : x_scale_data(parseTimeInYear(d.year)),
+        running_total : y_scale_data(parseInt(d.running_total))
+      };
+    }).then(function (data) {
+      console.log(data); // you should see the data in your browser's developer tools console 
+      
+      /* Create bar plot using data from csv */
+
+      // set the domains of X and Y scales based on data
+      //x.domain(127);
+      //y.domain(10);
+
+
+      // Add bars to svg - create new elements based on your data
+      svg.selectAll("rect").data(data).enter().append("rect")
+        .attr("fill", "rgb(87, 39, 245)")
+        .attr("x", function(d){
+            return width_offset + d.year
+        })
+        .attr("width", width/128 - 5)
+        .attr("y", function(d){
+            return height - height_offset - d.running_total
+        })
+        .attr("height", function(d) {
+            return d.running_total
+        })
+        .attr("fill", "rgb(87, 39, 245)").append();
+
+
+      // Add the X Axis
+      //svg.append()
+      svg.append("g")
+          .attr("transform", "translate(" + width_offset + "," + (height - height_offset) + ")")
+          .attr("class", "axis")
+          .call(x_axis);
+
+      // Add the text label for X Axis
+      //svg.append()
+      svg.append("text")
+          .attr("text-anchor", "end")
+          .attr("x", width/2.5)
+          .attr("y", height - 40)
+          .attr("class", "x label")
+          .style("font-size", "14px")
+          .text("Year");
+
+      // Add the Y Axis
+      //svg.append()
+      svg.append("g")
+          .attr("transform", "translate(" + y_padding + ",80)")
+          .attr("class", "axis")
+          .call(y_axis);
+
+      // Add the text label for Y axis
+      //svg.append()
+      svg.append("text")
+          .attr("text-anchor", "end")
+          .attr("transform", "rotate(-90)")
+          .attr("dy", "1.0em")
+          .attr("x", -100)
+          .attr("y", 8)
+          .attr("class", "y label")
+          .style("font-size", "14px")
+          .text("Running Total");
+
+      // Add Title to the plot
+      svg.append("text")
+          .attr("text-anchor", "middle")
+          .attr("x", width/2.5)
+          .attr("y", 40)
+          .text("Running Total of TMDb Movies by Year");
+
+      // Add GT user name
+      svg.append("text")
+          .attr("text-anchor", "end")
+          .attr("x", width/1.4)
+          .attr("y", height - 30)
+          .style("font-size", "10px")
+          .text("lpant3");
+
+
+    }).catch(function (error) {
+      console.log(error);
+    });
+
+
+  </script>
+
+</body>

@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c387c178-3e12-4ab1-9408-bef0eb9f058f" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="hw1-skeleton" />
+  </component>
+  <component name="JupyterTrust" id="dff9dea6-9b54-4f57-82b6-81c3f612096c" />
+  <component name="ProjectId" id="1gmYBwoed67m6LYjLBqhnASkqM8" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Q4/old_stuff3" />
+      <recent name="$PROJECT_DIR$/Q4/old_stuff2" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Q4" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.Q2_SQL">
+    <configuration name="Q2_SQL" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="hw1-skeleton" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Q2" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Q2/Q2_SQL.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="run" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="hw1-skeleton" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Q5" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Q5/run.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="submission" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="hw1-skeleton" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Q1" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Q1/submission.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.Q2_SQL" />
+        <item itemvalue="Python.submission" />
+        <item itemvalue="Python.run" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c387c178-3e12-4ab1-9408-bef0eb9f058f" name="Default Changelist" comment="" />
+      <created>1598721103154</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1598721103154</updated>
+      <workItem from="1598721130961" duration="2562000" />
+      <workItem from="1599145554412" duration="303000" />
+      <workItem from="1599296105040" duration="16205000" />
+      <workItem from="1599487368456" duration="84115000" />
+      <workItem from="1600540846054" duration="1119000" />
+      <workItem from="1601127406374" duration="840000" />
+      <workItem from="1601287329934" duration="90000" />
+      <workItem from="1601820993445" duration="3171000" />
+      <workItem from="1602050782570" duration="34000" />
+      <workItem from="1602881156403" duration="514000" />
+      <workItem from="1607904074343" duration="6213000" />
+      <workItem from="1607920139218" duration="471000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="100" y="60" width="1240" height="840" key="DiffContextDialog" timestamp="1600010792438">
+      <screen x="0" y="23" width="1440" height="822" />
+    </state>
+    <state x="100" y="60" width="1240" height="840" key="DiffContextDialog/0.0.1440.900@0.0.1440.900" timestamp="1600010634047" />
+    <state x="100" y="60" width="1240" height="840" key="DiffContextDialog/0.23.1440.822@0.23.1440.822" timestamp="1600010792438" />
+    <state width="1398" height="208" key="GridCell.Tab.0.bottom" timestamp="1600213300531">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="208" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1600213300531" />
+    <state width="1164" height="2" key="GridCell.Tab.0.bottom/0.23.1440.822@0.23.1440.822" timestamp="1599879010565" />
+    <state width="1398" height="208" key="GridCell.Tab.0.center" timestamp="1600213300531">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="208" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1600213300531" />
+    <state width="1164" height="2" key="GridCell.Tab.0.center/0.23.1440.822@0.23.1440.822" timestamp="1599879010564" />
+    <state width="1398" height="208" key="GridCell.Tab.0.left" timestamp="1600213300530">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="208" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1600213300530" />
+    <state width="1164" height="2" key="GridCell.Tab.0.left/0.23.1440.822@0.23.1440.822" timestamp="1599879010564" />
+    <state width="1398" height="208" key="GridCell.Tab.0.right" timestamp="1600213300531">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="208" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1600213300531" />
+    <state width="1164" height="2" key="GridCell.Tab.0.right/0.23.1440.822@0.23.1440.822" timestamp="1599879010565" />
+    <state width="1164" height="2" key="GridCell.Tab.1.bottom" timestamp="1600213300517">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1164" height="2" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1600213300517" />
+    <state width="1164" height="2" key="GridCell.Tab.1.bottom/0.23.1440.822@0.23.1440.822" timestamp="1599879010566" />
+    <state width="1164" height="2" key="GridCell.Tab.1.center" timestamp="1600213300516">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1164" height="2" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1600213300516" />
+    <state width="1164" height="2" key="GridCell.Tab.1.center/0.23.1440.822@0.23.1440.822" timestamp="1599879010566" />
+    <state width="1164" height="2" key="GridCell.Tab.1.left" timestamp="1600213300516">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1164" height="2" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1600213300516" />
+    <state width="1164" height="2" key="GridCell.Tab.1.left/0.23.1440.822@0.23.1440.822" timestamp="1599879010565" />
+    <state width="1164" height="2" key="GridCell.Tab.1.right" timestamp="1600213300516">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1164" height="2" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1600213300516" />
+    <state width="1164" height="2" key="GridCell.Tab.1.right/0.23.1440.822@0.23.1440.822" timestamp="1599879010566" />
+    <state x="229" y="89" key="SettingsEditor" timestamp="1599818066782">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="229" y="89" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1599818066782" />
+    <state x="100" y="84" width="1240" height="767" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1600052231325">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="100" y="84" width="1240" height="767" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1440.900@0.0.1440.900" timestamp="1600052231325" />
+    <state x="100" y="84" width="1240" height="767" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.23.1440.822@0.23.1440.822" timestamp="1599892413830" />
+    <state x="386" y="207" width="667" height="486" key="find.popup" timestamp="1600009522141">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="386" y="207" width="667" height="486" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1600009522141" />
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1599921694940">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1599921694940" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/hw1_skeleton$Q2_SQL.coverage" NAME="Q2_SQL Coverage Results" MODIFIED="1600082823490" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Q2" />
+    <SUITE FILE_PATH="coverage/hw1_skeleton$run.coverage" NAME="run Coverage Results" MODIFIED="1599883291327" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Q5" />
+    <SUITE FILE_PATH="coverage/hw1_skeleton$submission.coverage" NAME="submission Coverage Results" MODIFIED="1600080805268" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Q1" />
+  </component>
+</project>

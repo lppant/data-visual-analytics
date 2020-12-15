@@ -1,0 +1,11 @@
+1. What is the main reason to use a random forest versus a decision tree (using no more than 50 words)?
+Ans: 
+Decision trees improve accuracy with more and more splits and can easily overfit training data. 
+So, in cases where we want better accuracy without overfitting and don't worry about model interpretability, we prefer to use random forest. 
+Random forest controls overfitting by randomly selecting features to build trees.
+
+2. How long did your random forest take to run (in seconds)?
+Ans: Random forest took around 11 seconds to complete.
+
+3. What accuracy (to two decimal places, xx.xx%) were you able to obtain?
+Ans. Best accuracy obtained was 76.01%

@@ -1,0 +1,23 @@
+﻿City_served,FAA,IATA,ICAO,Airport_name,Role,Enpl.,COUNTY
+Arcata/Eureka,ACV,ACV,KACV,Arcata Airport,P-N,"69,732",Humboldt
+Bakersfield,BFL,BFL,KBFL,Meadows Field,P-N,"100,433",Kern
+Burbank,BUR,BUR,KBUR,Hollywood Burbank Airport (was Bob Hope Airport),P-M,"2,077,892",Los Angeles
+Fresno,FAT,FAT,KFAT,Fresno Yosemite International Airport,P-S,"761,298",Fresno
+Long Beach,LGB,LGB,KLGB,Long Beach Airport (Daugherty Field),P-S,"1,386,357",Los Angeles
+Los Angeles,LAX,LAX,KLAX,Los Angeles International Airport,P-L,"39,636,042",Los Angeles
+Mammoth Lakes,MMH,MMH,KMMH,Mammoth Yosemite Airport,P-N [nb 1],"21,826",Mono
+Monterey,MRY,MRY,KMRY,Monterey Regional Airport (was Monterey Peninsula Airport),P-N,"192,136",Monterey
+Oakland,OAK,OAK,KOAK,Oakland International Airport,P-M,"5,934,639",Alameda
+Ontario,ONT,ONT,KONT,Ontario International Airport,P-M,"4,217,366",San Bernardino
+Orange County,SNA,SNA,KSNA,John Wayne Airport (was Orange County Airport),P-M,"5,217,242",Orange
+Palm Springs,PSP,PSP,KPSP,Palm Springs International Airport,P-S,"995,801",Riverside
+Redding,RDD,RDD,KRDD,Redding Municipal Airport,P-N,"43,414",Shasta
+Sacramento,SMF,SMF,KSMF,Sacramento International Airport,P-M,"4,969,366",Sacramento
+San Diego,SAN,SAN,KSAN,San Diego International Airport (Lindbergh Field),P-L,"10,340,164",San Diego
+San Francisco,SFO,SFO,KSFO,San Francisco International Airport,P-L,"25,707,101",San Francisco
+San Jose,SJC,SJC,KSJC,Norman Y. Mineta San José International Airport,P-M,"5,321,603", Santa Clara
+San Luis Obispo,SBP,SBP,KSBP,San Luis Obispo County Regional Airport (McChesney Field),P-N,"162,719",San Luis Obispo
+Santa Barbara,SBA,SBA,KSBA,Santa Barbara Municipal Airport (Santa Barbara Airport),P-N,"329,751",Santa Barbara
+Santa Maria,SMX,SMX,KSMX,Santa Maria Public Airport (Capt G. Allan Hancock Field),P-N,"40,120",Santa Barbara
+Santa Rosa,STS,STS,KSTS,Charles M. Schulz–Sonoma County Airport,P-N,"167,151",Sonoma
+Stockton,SCK,SCK,KSCK,Stockton Metropolitan Airport,P-N,"93,076",San Joaquin

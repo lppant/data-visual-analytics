@@ -1,0 +1,1 @@
+We may want to use such nonlinear scales when the spread of the data is large and there is a need to normalise the data before visualisation.

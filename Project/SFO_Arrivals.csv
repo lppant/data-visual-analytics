@@ -1,0 +1,276 @@
+﻿TIME,FLIGHT,FROM_AIRPORT,IATA,AIRLINE,AIRCRAFT,STATUS
+0:28,AA2280,Miami ,MIA,American Airlines,A321 (N147AA),Delayed 01:53
+0:30,OZ285,Los Angeles ,LAX,Asiana Airlines,B741,Scheduled
+0:30,OZ286,Los Angeles ,LAX,Asiana Airlines,B741,Scheduled
+1:25,KE214,Los Angeles ,LAX,Korean Air,B744,Scheduled
+2:20,8C3201,Wilmington ,ILN,Air Transport International,B762 (N739AX),Estimated 02:22
+5:10,UA2584,Honolulu ,HNL,United Airlines,B77W (N2332U),Estimated 04:41
+6:00,AI173,Delhi ,DEL,Air India,B77L (VT-ALF),Estimated 05:22
+6:00,UA955,Tel Aviv ,TLV,United Airlines,B789 (N13954),Estimated 05:24
+6:12,UA868,Delhi ,DEL,United Airlines,B789,Scheduled
+6:19,UA1092,Kailua-Kona ,KOA,United Airlines,B739 (N37437),Scheduled
+6:24,UA1575,Honolulu ,HNL,United Airlines,B772 (N777UA),Scheduled
+6:26,UA1580,Kahului ,OGG,United Airlines,B738 (N77537),Scheduled
+6:30,UA282,Lihue ,LIH,United Airlines,B738 (N87531),Scheduled
+6:50,UA114,Papeete ,PPT,United Airlines,B789 (N25982),Estimated 06:36
+7:34,UA5572,Ontario ,ONT,United Express,E75L (N119SY),Scheduled
+7:38,UA5313,Arcata ,ACV,United Express,E75L (N116SY),Scheduled
+7:38,UA5631,Bakersfield ,BFL,United Express,E75L (N621UX),Scheduled
+7:38,UA5882,San Luis Obispo ,SBP,United Express,CRJ2 (N652BR),Scheduled
+7:42,UA4680,Medford ,MFR,United Express,E75L (N153SY),Scheduled
+7:42,UA5998,Reno ,RNO,United Express,E75L (N213SY),Scheduled
+7:44,UA5324,Sacramento ,SMF,United Express,E75L (N146SY),Scheduled
+7:44,UA5819,Santa Barbara ,SBA,United Express,E75L (N202SY),Scheduled
+7:48,1I154,Las Vegas ,LAS,NetJets,GLEX,Scheduled
+7:49,UA5317,Salt Lake City ,SLC,United Express,CRJ7 (N780SK),Scheduled
+7:56,AS2120,Los Angeles ,LAX,Alaska Horizon,E75L (N638QX),Scheduled
+8:10,AS376,Seattle ,SEA,Alaska Airlines,A21N (N928VA),Scheduled
+8:15,K4344,Seattle ,SEA,Kalitta Air,B763,Scheduled
+8:20,UA870,Sydney ,SYD,United Airlines,B789 (N27959),Estimated 08:12
+8:20,UA872,Taipei ,TPE,United Airlines,B77W (N2639U),Delayed 09:04
+8:25,WN819,Los Angeles ,LAX,Southwest Airlines,B737 (N267WN),Scheduled
+8:26,AS3461,San Diego ,SAN,Alaska SkyWest,E75L (N400SY),Scheduled
+8:30,UA858,Shanghai ,PVG,United Airlines,B77W (N2136U),Estimated 07:57
+8:34,NH8,Tokyo ,NRT,All Nippon Airways,B77W (JA779A),Scheduled
+8:40,AS2499,Portland ,PDX,Alaska Horizon,E75L (N643QX),Scheduled
+8:40,F92079,Las Vegas ,LAS,Frontier (Weston the Woodpecker Livery),A20N (N309FR),Scheduled
+8:40,WN261,Burbank ,BUR,Southwest Airlines,B737 (N276WN),Scheduled
+8:51,AS3455,Las Vegas ,LAS,Alaska SkyWest,E75L (N192SY),Scheduled
+9:05,UA820,Mexico City ,MEX,United Airlines,B738 (N76508),Scheduled
+9:05,UA5464,Redmond ,RDM,United Express,E75L (N144SY),Scheduled
+9:10,WN1391,San Diego ,SAN,Southwest Airlines,B737 (N553WN),Scheduled
+9:14,UA1852,Las Vegas ,LAS,United Airlines,B738 (N27239),Scheduled
+9:15,UA838,Tokyo ,NRT,United Airlines,B789 (N24980),Scheduled
+9:20,UA2123,Austin ,AUS,United Airlines,A320 (N472UA),Scheduled
+9:20,UA5997,Palm Springs ,PSP,United Express,CRJ2 (N982SW),Scheduled
+9:21,UA5358,Boise ,BOI,United Express,E75L (N207SY),Scheduled
+9:22,UA2480,San Diego ,SAN,United Airlines,B738 (N76526),Scheduled
+9:22,UA5406,Tucson ,TUS,United Express,E75L (N130SY),Scheduled
+9:23,UA5736,Salt Lake City ,SLC,United Express,CRJ2 (N854AS),Scheduled
+9:25,UA5437,Phoenix ,PHX,United Express,E75L (N120SY),Scheduled
+9:26,UA5276,Burbank ,BUR,United Express,E75L (N128SY),Scheduled
+9:27,AS3317,Santa Ana ,SNA,Alaska SkyWest,E75L (N195SY),Scheduled
+9:29,JL58,Tokyo ,NRT,Japan Airlines,B77W,Scheduled
+9:30,UA2499,Seattle ,SEA,United Airlines,A319 (N848UA),Scheduled
+9:30,UA5874,Fresno ,FAT,United Express,CRJ2 (N916EV),Scheduled
+9:32,DL1303,Salt Lake City ,SLC,Delta Air Lines,BCS1 (N121DU),Scheduled
+9:32,UA753,Santa Ana ,SNA,United Airlines,A320 (N468UA),Scheduled
+9:37,UA4714,Redding ,RDD,United Express,CRJ2 (N947SW),Scheduled
+9:38,UA419,Denver ,DEN,United Airlines,B738 (N14214),Scheduled
+9:40,UA4733,Vancouver ,YVR,United Express,E75L (N209SY),Scheduled
+9:43,UA2166,Chicago ,ORD,United Airlines,B738 (N26215),Scheduled
+9:44,AS3357,Boise ,BOI,Alaska SkyWest,E75L (N189SY),Scheduled
+9:45,UA501,Los Angeles ,LAX,United Airlines,B739 (N75429),Scheduled
+9:45,UA4653,Eugene ,EUG,United Express,E75L (N135SY),Scheduled
+9:46,UA277,Washington ,IAD,United Airlines,B739 (N36476),Scheduled
+9:47,UA255,Houston ,IAH,United Airlines,B739 (N75426),Scheduled
+9:47,UA1491,Portland ,PDX,United Airlines,A320 (N438UA),Scheduled
+9:47,UA5522,Minneapolis ,MSP,United Express,E75L (N606UX),Scheduled
+9:48,UA225,New York ,EWR,United Airlines,B752 (N48127),Scheduled
+9:52,AS3367,Palm Springs ,PSP,Alaska SkyWest,E75L (N188SY),Scheduled
+9:55,DL3501,Los Angeles ,LAX,Delta Connection,E75L (N263SY),Scheduled
+10:03,AS766,Seattle ,SEA,Alaska Airlines,B739 (N290AK),Scheduled
+10:05,OO1357,Tucson ,TUS,United Express,CRJ2 (N701BR),Scheduled
+10:11,AS3437,Salt Lake City ,SLC,Alaska SkyWest,E75L (N194SY),Scheduled
+10:14,DL3708,Seattle ,SEA,Delta Connection,E75L (N299SY),Scheduled
+10:22,DL715,Atlanta ,ATL,Delta Air Lines,B739 (N905DN),Scheduled
+10:30,AA2916,Dallas ,DFW,American Airlines,B738 (N942NN),Scheduled
+10:30,F9663,Denver ,DEN,Frontier (Watson the Key Deer Livery),A20N (N372FR),Scheduled
+10:32,AA788,Phoenix ,PHX,American Airlines,A321 (N928AM),Scheduled
+10:39,DL712,Detroit ,DTW,Delta Air Lines,B739 (N823DN),Scheduled
+10:45,DL1066,Minneapolis ,MSP,Delta Air Lines,B739 (N900DU),Scheduled
+10:46,AS3435,Los Angeles ,LAX,Alaska SkyWest,E75L (N174SY),Scheduled
+10:54,AA2907,Chicago ,ORD,American Airlines,A319 (N804AW),Scheduled
+10:55,WN416,Denver ,DEN,Southwest Airlines,B738 (N8512U),Scheduled
+10:55,WN1341,Phoenix ,PHX,Southwest Airlines (Louisiana One Livery),B737 (N946WN),Scheduled
+11:07,AA76,New York ,JFK,American Airlines,A321 (N104NN),Scheduled
+11:19,B615,New York ,JFK,JetBlue Airways,A321 (N929JB),Scheduled
+11:20,UA892,Seoul ,ICN,United Airlines,B789 (N29968),Scheduled
+11:26,AS3413,San Diego ,SAN,Alaska SkyWest,E75L (N403SY),Scheduled
+11:34,B61833,Boston ,BOS,JetBlue Airways,A321 (N979JT),Scheduled
+11:34,DL301,New York ,JFK,Delta Air Lines,B752 (N702TW),Scheduled
+11:36,AS428,Portland ,PDX,Alaska Airlines,B738 (N557AS),Scheduled
+11:46,UA769,Chicago ,ORD,United Airlines,B753 (N57870),Scheduled
+11:52,UA1068,Denver ,DEN,United Airlines,B738 (N78285),Scheduled
+11:54,UA2372,Houston ,IAH,United Airlines,B739 (N38458),Scheduled
+11:54,UA5697,Sacramento ,SMF,United Express,E75L (N109SY),Scheduled
+11:55,AA3179,Los Angeles ,LAX,American Eagle,CRJ7 (N740SK),Scheduled
+11:59,UA390,San Diego ,SAN,United Airlines,B739 (N61881),Scheduled
+12:00,AM668,Mexico City ,MEX,Aeromexico,B738 (XA-AMN),Scheduled
+12:02,UA5899,Reno ,RNO,United Express,E75L (N213SY),Scheduled
+12:09,UA5416,Ontario ,ONT,United Express,CRJ7 (N780SK),Scheduled
+12:17,AA2918,Miami ,MIA,American Airlines,A321 (N994AN),Scheduled
+12:17,UA5468,Santa Ana ,SNA,United Express,E75L (N146SY),Scheduled
+12:20,DL1202,Minneapolis ,MSP,Delta Air Lines,B739 (N897DN),Scheduled
+12:20,DL1204,Atlanta ,ATL,Delta Air Lines,B739 (N913DU),Scheduled
+12:20,UA2121,Las Vegas ,LAS,United Airlines,A319 (N894UA),Scheduled
+12:20,UA5880,Phoenix ,PHX,United Express,E75L (N142SY),Scheduled
+12:27,DL1317,Salt Lake City ,SLC,Delta Air Lines,BCS1 (N126DU),Scheduled
+12:29,AA2914,Dallas ,DFW,American Airlines,B738 (N309PC),Scheduled
+12:38,UA732,New York ,EWR,United Airlines,B772 (N773UA),Scheduled
+12:40,WN629,Chicago ,MDW,Southwest Airlines,B737 (N493WN),Scheduled
+12:44,AA614,Philadelphia ,PHL,American Airlines,A321 (N989AU),Scheduled
+12:46,AS3380,Las Vegas ,LAS,Alaska SkyWest,E75L (N400SY),Scheduled
+12:57,DL3710,Los Angeles ,LAX,Delta Connection,E75L (N275SY),Scheduled
+13:00,LH454,Frankfurt ,FRA,Lufthansa (Star Alliance Livery),A343 (D-AIFE),Scheduled
+13:17,AS3305,Santa Ana ,SNA,Alaska SkyWest,E75L (N192SY),Scheduled
+13:20,CI5107,Los Angeles ,LAX,China Airlines,74Y,Scheduled
+13:33,FTH452,Palm Springs ,PSP,-,CJL,Scheduled
+13:41,B6483,New York ,EWR,JetBlue Airways,A321 (N923JB),Scheduled
+13:42,DL3581,Seattle ,SEA,Delta Connection,E75L (N274SY),Scheduled
+13:45,AS3321,Seattle ,SEA,Alaska SkyWest,E75L (N170SY),Scheduled
+13:47,UA1561,Denver ,DEN,United Airlines,B739 (N64809),Scheduled
+13:48,UA1742,Washington ,IAD,United Airlines,B739 (N68823),Scheduled
+13:53,B6577,Fort Lauderdale ,FLL,JetBlue Airways,A321 (N990JL),Scheduled
+13:55,BA285,London ,LHR,British Airways,B77L,Scheduled
+13:55,KE25,Seoul ,ICN,Korean Air,A333 (HL8026),Scheduled
+14:00,OZ212,Seoul ,ICN,Asiana Airlines,A359,Scheduled
+14:08,MU7301,Shanghai ,PVG,China Eastern Airlines,A332,Scheduled
+14:09,AA670,Charlotte ,CLT,American Airlines,A321 (N583UW),Scheduled
+14:14,FTH200,Burbank ,BUR,-,CN7,Scheduled
+14:16,AS3343,Los Angeles ,LAX,Alaska SkyWest,E75L (N188SY),Scheduled
+14:16,UA1286,Chicago ,ORD,United Airlines,B739 (N67846),Scheduled
+14:20,SK935,Copenhagen ,CPH,SAS,A333,Scheduled
+14:25,WN1037,Los Angeles ,LAX,Southwest Airlines,B737 (N492WN),Scheduled
+14:26,AS3389,San Diego ,SAN,Alaska SkyWest,E75L (N195SY),Scheduled
+14:30,UA195,Munich ,MUC,United Airlines,B788 (N27901),Scheduled
+14:41,AA1895,Dallas ,DFW,American Airlines,B738 (N968NN),Scheduled
+14:47,AS3340,Palm Springs ,PSP,Alaska SkyWest,E75L (N194SY),Scheduled
+14:48,AS2305,Spokane ,GEG,Alaska Horizon,E75L (N629QX),Scheduled
+14:50,AS2300,Portland ,PDX,Alaska Horizon,E75L (N631QX),Scheduled
+14:50,BR18,Taipei ,TPE,EVA Air,B773,Scheduled
+14:50,WN575,Las Vegas ,LAS,Southwest Airlines,B738 (N8688J),Scheduled
+14:55,UA421,Los Angeles ,LAX,United Airlines,B738 (N12225),Scheduled
+15:06,1I645,San Jose ,SJC,NetJets,C68A,Scheduled
+15:08,UA5455,Palm Springs ,PSP,United Express,E75L (N127SY),Scheduled
+15:09,UA5466,Boise ,BOI,United Express,CRJ2 (N652BR),Scheduled
+15:14,UA1497,Las Vegas ,LAS,United Airlines,B739 (N75426),Scheduled
+15:14,UA5281,Santa Barbara ,SBA,United Express,CRJ7 (N790SK),Scheduled
+15:17,AS3430,Santa Ana ,SNA,Alaska SkyWest,E75L (N174SY),Scheduled
+15:19,UA517,Portland ,PDX,United Airlines,A320 (N472UA),Scheduled
+15:23,UA5386,Arcata ,ACV,United Express,E75L (N120SY),Scheduled
+15:26,GAJ880,Santa Ana ,SNA,Gama Aviation,B350,Scheduled
+15:30,AA3183,Los Angeles ,LAX,American Eagle,CRJ7 (N746SK),Scheduled
+15:30,1I373,Oakland ,OAK,NetJets,E55P,Scheduled
+15:34,UA5265,Redmond ,RDM,United Express,E75L (N211SY),Scheduled
+15:35,UA5395,Fresno ,FAT,United Express,CRJ2 (N916EV),Scheduled
+15:37,UA1478,Denver ,DEN,United Airlines,B738 (N76532),Scheduled
+15:44,AS3485,Boise ,BOI,Alaska SkyWest,E75L (N199SY),Scheduled
+15:56,AC566,Vancouver ,YVR,Air Canada,A320 (C-FKPT),Scheduled
+15:58,DL1352,Salt Lake City ,SLC,Delta Air Lines,BCS1 (N108DQ),Scheduled
+16:13,DL3643,Los Angeles ,LAX,Delta Connection,E75L (N292SY),Scheduled
+16:20,AS3377,Seattle ,SEA,Alaska SkyWest,E75L (N186SY),Scheduled
+16:35,TK79,Istanbul ,IST,Turkish Airlines,B789,Scheduled
+16:38,UA1481,Houston ,IAH,United Airlines,B738 (N26232),Scheduled
+16:40,FTH905,Napa ,APC,-,CN7,Scheduled
+16:42,AA1890,Dallas ,DFW,American Airlines,A321 (N135NN),Scheduled
+16:42,SY395,Minneapolis ,MSP,Sun Country Airlines,B738,Scheduled
+16:45,UA59,Frankfurt ,FRA,United Airlines,B789 (N29984),Scheduled
+16:46,UA1174,San Jose del Cabo ,SJD,United Airlines,A320 (N416UA),Scheduled
+16:54,UA1243,Puerto Vallarta ,PVR,United Airlines,A320 (N452UA),Scheduled
+16:55,WN1075,San Diego ,SAN,Southwest Airlines,B738 (N8318F),Scheduled
+16:56,UA1722,Kahului ,OGG,United Airlines,B772 (N791UA),Scheduled
+17:01,AS3319,Las Vegas ,LAS,Alaska SkyWest,E75L (N400SY),Scheduled
+17:06,AS466,Portland ,PDX,Alaska Airlines,B739 (N492AS),Scheduled
+17:09,UA5754,North Bend ,OTH,United Express,CRJ2 (N472CA),Scheduled
+17:10,UA330,Boston ,BOS,United Airlines,B738 (N76503),Scheduled
+17:10,UA5902,Phoenix ,PHX,United Express,E75L (N153SY),Scheduled
+17:11,UA5255,Ontario ,ONT,United Express,E75L (N213SY),Scheduled
+17:12,N774QS,San Jose del Cabo ,SJD,NORRA,CL30,Scheduled
+17:13,UA5264,Palm Springs ,PSP,United Express,E75L (N109SY),Scheduled
+17:13,UA5440,Salt Lake City ,SLC,United Express,E75L (N621UX),Scheduled
+17:14,UA2102,Chicago ,ORD,United Airlines,B753 (N57855),Scheduled
+17:14,UA4775,Eugene ,EUG,United Express,E75L (N157SY),Scheduled
+17:14,UA5559,Sacramento ,SMF,United Express,CRJ2 (N982SW),Scheduled
+17:15,UA426,Seattle ,SEA,United Airlines,A319 (N844UA),Scheduled
+17:17,UA5777,San Luis Obispo ,SBP,United Express,CRJ2 (N973SW),Scheduled
+17:18,UA5452,Vancouver ,YVR,United Express,E75L (N606UX),Scheduled
+17:21,UA643,Kailua-Kona ,KOA,United Airlines,B739 (N63890),Scheduled
+17:22,AS2377,Austin ,AUS,Alaska Horizon,E75L (N632QX),Scheduled
+17:23,UA2482,San Diego ,SAN,United Airlines,B739 (N47414),Scheduled
+17:25,UA5504,Medford ,MFR,United Express,CRJ2 (N693BR),Scheduled
+17:26,UA5606,Spokane ,GEG,United Express,E75L (N207SY),Scheduled
+17:27,AS3379,Palm Springs ,PSP,Alaska SkyWest,E75L (N192SY),Scheduled
+17:27,UA5779,Bozeman ,BZN,United Express,E75L (N116SY),Scheduled
+17:28,UA735,Denver ,DEN,United Airlines,A320 (N417UA),Scheduled
+17:28,UA5926,Santa Ana ,SNA,United Express,CRJ7 (N780SK),Scheduled
+17:30,UA1548,Los Angeles ,LAX,United Airlines,B738 (N87531),Scheduled
+17:32,UA494,Houston ,IAH,United Airlines,B739 (N69816),Scheduled
+17:32,UA5814,Reno ,RNO,United Express,E75L (N142SY),Scheduled
+17:33,DL3711,Seattle ,SEA,Delta Connection,E75L (N244SY),Scheduled
+17:33,UA5456,Dallas ,DFW,United Express,E75L (N119SY),Scheduled
+17:34,UA306,Austin ,AUS,United Airlines,A319 (N823UA),Scheduled
+17:39,UA1978,New York ,EWR,United Airlines,B752 (N12114),Scheduled
+17:39,UA5417,Tucson ,TUS,United Express,CRJ2 (N854AS),Scheduled
+17:40,UA4761,Albuquerque ,ABQ,United Express,E75L (N128SY),Scheduled
+17:42,UA372,Honolulu ,HNL,United Airlines,B753 (N77865),Scheduled
+17:42,UA2047,Las Vegas ,LAS,United Airlines,A320 (N483UA),Scheduled
+17:42,UA5321,Boise ,BOI,United Express,E75L (N204SY),Scheduled
+17:56,DL843,Minneapolis ,MSP,Delta Air Lines,B739 (N821DN),Scheduled
+18:03,UA1159,Cancun ,CUN,United Airlines,B739 (N37419),Scheduled
+18:06,AS2303,Las Vegas ,LAS,Alaska Horizon,E75L (N624QX),Scheduled
+18:20,AS3400,Los Angeles ,LAX,Alaska SkyWest,E75L (N187SY),Scheduled
+18:20,UA900,London ,LHR,United Airlines,B788 (N27903),Scheduled
+18:21,DL3572,Los Angeles ,LAX,Delta Connection,E75L (N302SY),Scheduled
+18:25,DL720,Detroit ,DTW,Delta Air Lines,B739 (N911DQ),Scheduled
+18:26,DL401,New York ,JFK,Delta Air Lines,B752 (N722TW),Scheduled
+18:34,AA680,Philadelphia ,PHL,American Airlines,A321 (N184US),Scheduled
+18:39,1I759,Eagle ,EGE,NetJets,CL30,Scheduled
+18:40,AS2395,Dallas ,DAL,Alaska Horizon,E75L (N643QX),Scheduled
+18:40,WN1254,Burbank ,BUR,Southwest Airlines,B738 (N8618N),Scheduled
+18:45,CI4,Taipei ,TPE,China Airlines,B773,Scheduled
+18:55,F92081,Las Vegas ,LAS,Frontier (Steve the Eagle Livery),A321 (N709FR),Scheduled
+18:55,WN526,Phoenix ,PHX,Southwest Airlines,B737 (N959WN),Scheduled
+18:57,AA1824,Dallas ,DFW,American Airlines,B738 (N963NN),Scheduled
+18:57,DL717,Atlanta ,ATL,Delta Air Lines,B739 (N815DN),Scheduled
+19:05,UA1808,Houston ,IAH,United Airlines,B738 (N77542),Scheduled
+19:25,B62736,Los Angeles ,LAX,JetBlue Airways,A320 (N827JB),Scheduled
+19:30,AS3453,Santa Ana ,SNA,Alaska SkyWest,E75L (N170SY),Scheduled
+19:45,AS1273,Puerto Vallarta ,PVR,Alaska Airlines,B739 (N290AK),Scheduled
+20:00,AS3325,Los Angeles ,LAX,Alaska SkyWest,E75L (N195SY),Scheduled
+20:00,AS3361,San Diego ,SAN,Alaska SkyWest,E75L (N402SY),Scheduled
+20:02,AA99,Phoenix ,PHX,American Airlines,A321 (N933AM),Scheduled
+20:05,AS1258,Seattle ,SEA,Alaska Airlines,B739 (N309AS),Scheduled
+20:20,AS1213,Chicago ,ORD,Alaska Airlines (Boeing 100 years strong Livery),B739 (N248AK),Scheduled
+20:24,UA1666,Los Angeles ,LAX,United Airlines,A320 (N468UA),Scheduled
+20:34,AS3464,Phoenix ,PHX,Alaska SkyWest,E75L (N188SY),Scheduled
+20:34,DL716,Atlanta ,ATL,Delta Air Lines,B752 (N823DX),Scheduled
+20:36,B6633,Boston ,BOS,JetBlue Airways,A321 (N937JB),Scheduled
+20:38,AS2317,Spokane ,GEG,Alaska Horizon,E75L (N631QX),Scheduled
+20:39,UA2110,Chicago ,ORD,United Airlines,A320 (N493UA),Scheduled
+20:45,AS657,New York ,JFK,Alaska Airlines,A21N (N929VA),Scheduled
+20:45,WN227,Los Angeles ,LAX,Southwest Airlines,B738 (N8574Z),Scheduled
+20:50,UA2435,Washington ,IAD,United Airlines,B788 (N26906),Scheduled
+20:51,AA1430,Dallas ,DFW,American Airlines,B738 (N343PN),Scheduled
+20:55,UA214,Seattle ,SEA,United Airlines,A319 (N848UA),Scheduled
+21:10,UA1118,Cancun ,CUN,United Airlines,B739 (N37437),Scheduled
+21:10,CX872,Hong Kong ,HKG,Cathay Pacific,A35K,Scheduled
+21:17,UA257,Denver ,DEN,United Airlines,B739 (N61898),Scheduled
+21:18,UA5279,San Diego ,SAN,United Express,E75L (N127SY),Scheduled
+21:20,B6115,New York ,JFK,JetBlue Airways,A321 (N989JT),Scheduled
+21:25,UA741,New York ,EWR,United Airlines,B789 (N24973),Scheduled
+21:25,WN1320,San Diego ,SAN,Southwest Airlines,B738 (N8682B),Scheduled
+21:29,AA2909,Charlotte ,CLT,American Airlines,A321 (N191UW),Scheduled
+21:29,AS3476,Portland ,PDX,Alaska SkyWest,E75L (N404SY),Scheduled
+21:29,DL673,New York ,JFK,Delta Air Lines,B752 (N706TW),Scheduled
+21:30,AS1002,Washington ,DCA,Alaska Airlines,A21N (N928VA),Scheduled
+21:30,WN434,Denver ,DEN,Southwest Airlines,B738 (N8529Z),Scheduled
+21:43,AA2920,Chicago ,ORD,American Airlines,B738 (N932NN),Scheduled
+21:55,UA2400,Boston ,BOS,United Airlines,B738 (N77539),Scheduled
+21:56,AS345,New York ,EWR,Alaska Airlines,B739 (N298AK),Scheduled
+21:57,UA1552,Houston ,IAH,United Airlines,B789 (N24976),Scheduled
+22:00,UA1608,Chicago ,ORD,United Airlines,B789 (N17963),Scheduled
+22:05,DL3557,Los Angeles ,LAX,Delta Connection,E75L (N275SY),Scheduled
+22:10,AV560,San Salvador ,SAL,Avianca,A319 (N480TA),Scheduled
+22:25,AS3479,Los Angeles ,LAX,Alaska SkyWest,E75L (N187SY),Scheduled
+22:25,UA2862,Guam ,GUM,United Airlines,B789 (N26967),Scheduled
+22:38,AA3202,Los Angeles ,LAX,American Eagle,CRJ7 (N740SK),Scheduled
+22:45,AS1279,San Jose del Cabo ,SJD,Alaska Airlines,A320 (N841VA),Scheduled
+22:48,DL710,Atlanta ,ATL,Delta Air Lines,B739 (N820DN),Scheduled
+23:00,DL994,Detroit ,DTW,Delta Air Lines,B739 (N837DN),Scheduled
+23:06,DL827,Minneapolis ,MSP,Delta Air Lines,B739 (N802DN),Scheduled
+23:12,DL1362,Salt Lake City ,SLC,Delta Air Lines,BCS1 (N115DU),Scheduled
+23:17,DL3597,Seattle ,SEA,Delta Connection,E75L (N268SY),Scheduled
+23:20,HA12,Honolulu ,HNL,Hawaiian Airlines,A332,Scheduled
+23:40,AS1332,Seattle ,SEA,Alaska Airlines,A320 (N845VA),Scheduled
+23:54,F9665,Denver ,DEN,Frontier (Choo the Pika Livery),A20N (N331FR),Scheduled

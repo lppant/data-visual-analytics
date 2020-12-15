@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="97b6b55e-057e-4ca2-9533-12ba69373ea0" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="JupyterTrust" id="dff9dea6-9b54-4f57-82b6-81c3f612096c" />
+  <component name="ProjectId" id="1hmN6v3dNAnwM7VM63Df92kZgIb" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Q5" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Q5" />
+      <recent name="$PROJECT_DIR$/Q4" />
+      <recent name="$PROJECT_DIR$/Q3" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Q3" />
+    </key>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="97b6b55e-057e-4ca2-9533-12ba69373ea0" name="Default Changelist" comment="" />
+      <created>1600612135929</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1600612135929</updated>
+      <workItem from="1600612157315" duration="8004000" />
+      <workItem from="1601127406907" duration="598000" />
+      <workItem from="1601287330026" duration="2283000" />
+      <workItem from="1601468856484" duration="70847000" />
+      <workItem from="1602050782570" duration="35000" />
+      <workItem from="1602881157045" duration="514000" />
+      <workItem from="1605590673075" duration="1953000" />
+      <workItem from="1606023023718" duration="4408000" />
+      <workItem from="1606267919042" duration="607000" />
+      <workItem from="1607373383491" duration="6000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="100" y="109" width="1240" height="682" key="DiffContextDialog" timestamp="1607993697359">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="100" y="109" width="1240" height="682" key="DiffContextDialog/0.0.1440.900@0.0.1440.900" timestamp="1607993697359" />
+    <state x="100" y="123" width="1240" height="625" key="DiffContextDialog/0.23.1440.826@0.23.1440.826" timestamp="1601836300189" />
+    <state x="100" y="123" width="1240" height="627" key="DiffContextDialog/0.23.1440.828@0.23.1440.828" timestamp="1601876602531" />
+    <state x="100" y="123" width="1240" height="628" key="DiffContextDialog/0.23.1440.829@0.23.1440.829" timestamp="1601893270434" />
+    <state x="229" y="89" key="SettingsEditor" timestamp="1600614481619">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="229" y="89" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1600614481619" />
+    <state x="0" y="0" width="1440" height="900" maximized="true" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1601896781057">
+      <screen x="0" y="23" width="1440" height="829" />
+    </state>
+    <state x="100" y="100" width="1240" height="700" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1440.900@0.0.1440.900" timestamp="1601731925821" />
+    <state x="0" y="0" width="1440" height="900" maximized="true" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.23.1440.826@0.23.1440.826" timestamp="1601865672577" />
+    <state x="100" y="115" width="1240" height="644" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.23.1440.827@0.23.1440.827" timestamp="1601865845069" />
+    <state x="385" y="203" width="670" height="621" key="search.everywhere.popup" timestamp="1601835477193">
+      <screen x="0" y="23" width="1440" height="826" />
+    </state>
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1601310239968" />
+    <state x="385" y="203" width="670" height="621" key="search.everywhere.popup/0.23.1440.826@0.23.1440.826" timestamp="1601835477193" />
+  </component>
+</project>

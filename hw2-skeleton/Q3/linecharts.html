@@ -1,0 +1,1061 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+
+<style type="text/css">
+
+.line {
+    fill: none;
+    stroke-width: 2;
+}
+  
+.overlay {
+  fill: none;
+  pointer-events: all;
+}
+
+</style>
+<body>
+</body>
+
+<script type="text/javascript" src="../lib/d3.v5.min.js"></script>
+
+<!-- part 3.A -->
+<script type="text/javascript">
+
+  //reading dataset
+  d3.dsv(",", "boardgame_ratings.csv", function(d) {
+  return {
+    date: Date.parse(d.date),
+    catan_count: d['Catan=count'],
+    catan_rank: d['Catan=rank'],
+    dominion_count: d['Dominion=count'],
+    dominion_rank: d['Dominion=rank'],
+    codenames_count: d['Codenames=count'],
+    codenames_rank: d['Codenames=rank'],
+    terraforming_mars_count: d['Terraforming Mars=count'],
+    terraforming_mars_rank: d['Terraforming Mars=rank'],
+    gloomhaven_count: d['Gloomhaven=count'],
+    gloomhaven_rank: d['Gloomhaven=rank'],
+    magic_the_gathering_count: d['Magic: The Gathering=count'],
+    magic_the_gathering_rank: d['Magic: The Gathering=rank'],
+    dixit_count: d['Dixit=count'],
+    dixit_rank: d['Dixit=rank'],
+    monopoly_count: d['Monopoly=count'],
+    monopoly_rank: d['Monopoly=rank']
+  }
+}).then(function(data) {
+  var dataset = data;
+
+  var margin = {top: 200, right: 200, bottom: 200, left: 200}
+  , width = window.innerWidth - margin.left - margin.right
+  , height = window.innerHeight - margin.top - margin.bottom;
+
+  var x = d3.scaleTime()
+  .domain(d3.extent(dataset, function(d) { return new Date(d.date); }))
+  .range([0, width]);
+
+  var y = d3.scaleLinear()
+    .domain([0, 100000])
+    .range([height, 0]);
+
+  var catanLine = d3.line()
+    .x(function(d) { return x(d.date); })
+    .y(function(d) { return y(d.catan_count); })
+    .curve(d3.curveMonotoneX)
+
+  var dominionLine = d3.line()
+    .x(function(d) { return x(d.date); })
+    .y(function(d) { return y(d.dominion_count); })
+    .curve(d3.curveMonotoneX)
+
+  var codenamesLine = d3.line()
+    .x(function(d) { return x(d.date); })
+    .y(function(d) { return y(d.codenames_count); })
+    .curve(d3.curveMonotoneX)
+
+  var terraformingMarsLine = d3.line()
+    .x(function(d) { return x(d.date); })
+    .y(function(d) { return y(d.terraforming_mars_count); })
+    .curve(d3.curveMonotoneX)
+
+  var gloomhavenLine = d3.line()
+    .x(function(d) { return x(d.date); })
+    .y(function(d) { return y(d.gloomhaven_count); })
+    .curve(d3.curveMonotoneX)
+
+  var mgcLine = d3.line()
+    .x(function(d) { return x(d.date); })
+    .y(function(d) { return y(d.magic_the_gathering_count); })
+    .curve(d3.curveMonotoneX)
+
+  var dixitLine = d3.line()
+    .x(function(d) { return x(d.date); })
+    .y(function(d) { return y(d.dixit_count); })
+    .curve(d3.curveMonotoneX)
+
+  var monopolyLine = d3.line()
+    .x(function(d) { return x(d.date); })
+    .y(function(d) { return y(d.monopoly_count); })
+    .curve(d3.curveMonotoneX)
+
+  var svg = d3.select("body").append("svg")
+    .attr("width", width + margin.left + margin.right)
+    .attr("height", height + margin.top + margin.bottom)
+    .append("g")
+    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+
+  svg.append("g")
+    .attr("transform", "translate(0," + height + ")")
+    .call(d3.axisBottom(x).tickFormat(d3.timeFormat("%b %y")));
+
+  svg.append("text")
+    .attr("text-anchor","middle")
+    .attr("transform","translate("+(width/2) + "," + (height+40) + ")")
+    .text("Month");
+
+
+  svg.append("text")
+    .attr("text-anchor","middle")
+    .attr("transform","translate("+(-45) + "," + (height/2) + ")rotate(-90)")
+    .text("Num of Ratings");
+
+  svg.append("g")
+    .attr("class", "y axis")
+    .call(d3.axisLeft(y));
+
+  var colors = d3.schemeCategory10;
+
+  svg.append("path")
+   .datum(dataset)
+   .attr("class", "line")
+   .attr("d", catanLine)
+   .attr("stroke", colors[0]);
+
+  svg.append("path")
+   .datum(dataset)
+   .attr("class", "line")
+   .attr("d", dominionLine)
+   .attr("stroke", colors[1]);
+
+  svg.append("path")
+   .datum(dataset)
+   .attr("class", "line")
+   .attr("d", codenamesLine)
+   .attr("stroke", colors[2]);
+
+  svg.append("path")
+   .datum(dataset)
+   .attr("class", "line")
+   .attr("d", terraformingMarsLine)
+   .attr("stroke", colors[3]);
+
+  svg.append("path")
+   .datum(dataset)
+   .attr("class", "line")
+   .attr("d", gloomhavenLine)
+   .attr("stroke", colors[4]);
+
+  svg.append("path")
+   .datum(dataset)
+   .attr("class", "line")
+   .attr("d", mgcLine)
+   .attr("stroke", colors[5]);
+
+  svg.append("path")
+   .datum(dataset)
+   .attr("class", "line")
+   .attr("d", dixitLine).attr("stroke", colors[6]);
+
+  svg.append("path")
+   .datum(dataset)
+   .attr("class", "line")
+   .attr("d", monopolyLine)
+   .attr("stroke", colors[7]);;
+
+// Adding title
+  svg.append("text")
+      .attr("transform", "translate("+(width/2)+","+0+")")
+      .attr("font-size", "20px")
+      .attr("text-anchor", "middle")
+      .style("fill", "black")
+      .style("font-weight","bold")
+      .text("Number of Ratings 2016-2020");
+
+}).catch(function(error) {
+  console.log(error);
+});
+  
+</script>
+
+<!-- part 3.B -->
+<script type="text/javascript">
+
+  //reading dataset
+  d3.dsv(",", "boardgame_ratings.csv", function(d) {
+  return {
+    date: Date.parse(d.date),
+    catan_count: parseInt(d['Catan=count']),
+    catan_rank: parseInt(d['Catan=rank']),
+    dominion_count: parseInt(d['Dominion=count']),
+    dominion_rank: d['Dominion=rank'],
+    codenames_count: d['Codenames=count'],
+    codenames_rank: d['Codenames=rank'],
+    terraforming_mars_count: d['Terraforming Mars=count'],
+    terraforming_mars_rank: d['Terraforming Mars=rank'],
+    gloomhaven_count: d['Gloomhaven=count'],
+    gloomhaven_rank: d['Gloomhaven=rank'],
+    magic_the_gathering_count: d['Magic: The Gathering=count'],
+    magic_the_gathering_rank: d['Magic: The Gathering=rank'],
+    dixit_count: d['Dixit=count'],
+    dixit_rank: d['Dixit=rank'],
+    monopoly_count: d['Monopoly=count'],
+    monopoly_rank: d['Monopoly=rank']
+  }
+}).then(function(data) {
+  var records = data;
+
+  // 2. Use the margin convention practice 
+  var margin = {top: 40, right: 70, bottom: 40, left: 60}
+  , width = 740 - margin.left - margin.right // Use the window's width 
+  , height = 400 - margin.top - margin.bottom; // Use the window's height
+
+// The number of datapoints
+  var n = records.count;
+
+// 5. X scale will use the index of our data
+  /*var xScale = d3.scaleTime()
+    .domain([new Date("2016-11-01"), new Date("2020-08-01")])
+    .range(0,width);
+    */
+
+  var xScale = d3.scaleTime()
+  .domain(d3.extent(data, function(d) { 
+    return new Date(d.date); 
+  }))
+  .range([0, width]);
+
+  console.log(new Date("2016-11-01"));
+
+// 6. Y scale will use the randomly generate number 
+  var yScale = d3.scaleLinear()
+    .domain([0, 100000]) // input 
+    .range([height, 0]); // output 
+
+  var catanLine = d3.line()
+    .x(function(d) { return xScale(d.date); }) // set the x values for the line generator
+    .y(function(d) { return yScale(d.catan_count); }) // set the y values for the line generator 
+    .curve(d3.curveMonotoneX)
+
+
+  var dominionLine = d3.line()
+    .x(function(d) { return xScale(d.date); }) // set the x values for the line generator
+    .y(function(d) { return yScale(d.dominion_count); }) // set the y values for the line generator 
+    .curve(d3.curveMonotoneX)
+
+  var codenamesLine = d3.line()
+    .x(function(d) { return xScale(d.date); }) // set the x values for the line generator
+    .y(function(d) { return yScale(d.codenames_count); }) // set the y values for the line generator 
+    .curve(d3.curveMonotoneX)
+
+  var terraformingMarsLine = d3.line()
+    .x(function(d) { return xScale(d.date); }) // set the x values for the line generator
+    .y(function(d) { return yScale(d.terraforming_mars_count); }) // set the y values for the line generator 
+    .curve(d3.curveMonotoneX)
+
+  var gloomhavenLine = d3.line()
+    .x(function(d) { return xScale(d.date); }) // set the x values for the line generator
+    .y(function(d) { return yScale(d.gloomhaven_count); }) // set the y values for the line generator 
+    .curve(d3.curveMonotoneX)
+
+  var magictheGatheringLine = d3.line()
+    .x(function(d) { return xScale(d.date); }) // set the x values for the line generator
+    .y(function(d) { return yScale(d.magic_the_gathering_count); }) // set the y values for the line generator 
+    .curve(d3.curveMonotoneX)
+
+  var dixitLine = d3.line()
+    .x(function(d) { return xScale(d.date); }) // set the x values for the line generator
+    .y(function(d) { return yScale(d.dixit_count); }) // set the y values for the line generator 
+    .curve(d3.curveMonotoneX)
+
+  var monopolyLine = d3.line()
+    .x(function(d) { return xScale(d.date); }) // set the x values for the line generator
+    .y(function(d) { return yScale(d.monopoly_count); }) // set the y values for the line generator 
+    .curve(d3.curveMonotoneX)
+
+  var svg = d3.select("body").append("svg")
+    .attr("width", width + margin.left + margin.right)
+    .attr("height", height + margin.top + margin.bottom)
+    .append("g")
+    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+
+
+  svg.append("g")
+    //.attr("class", "x axis")
+    .attr("transform", "translate(0," + height + ")")
+    .call(d3.axisBottom(xScale)
+      .tickFormat(d3.timeFormat("%b %y"))); // Create an axis component with d3.axisBottom
+
+  svg.append("text")
+    .attr("text-anchor","middle")
+    .attr("transform","translate("+(width/2) + "," + (height+40) + ")")
+    .text("Month");
+
+
+  svg.append("text")
+    .attr("text-anchor","middle")
+    .attr("transform","translate("+(-45) + "," + (height/2) + ")rotate(-90)")
+    .text("Num of Ratings");
+  
+  // 4. Call the y axis in a group tag
+  svg.append("g")
+    .attr("class", "y axis")
+    .call(d3.axisLeft(yScale)); // Create an axis component with d3.axisLeft
+
+  //console.log(records)
+
+  var colors = d3.schemeCategory10
+
+  console.log(colors)
+  svg.append("path")
+   .attr("d",catanLine(records))
+   .datum(records) // 10. Binds data to the line 
+   .attr("class", "line") // Assign a class for styling 
+   .attr("d", catanLine)
+   .attr("stroke", colors[0]); // 11. Calls the line generator */
+
+  svg.append("path")
+   .attr("d",dominionLine(records))
+   .datum(records) // 10. Binds data to the line 
+   .attr("class", "line") // Assign a class for styling 
+   .attr("d", dominionLine)
+   .attr("stroke", colors[1]);
+
+  svg.append("path")
+   .attr("d",codenamesLine(records))
+   .datum(records) // 10. Binds data to the line 
+   .attr("class", "line") // Assign a class for styling 
+   .attr("d", codenamesLine)
+   .attr("stroke", colors[2]);
+
+  svg.append("path")
+   .attr("d",terraformingMarsLine(records))
+   .datum(records) // 10. Binds data to the line 
+   .attr("class", "line") // Assign a class for styling 
+   .attr("d", terraformingMarsLine)
+   .attr("stroke", colors[3]);
+
+  svg.append("path")
+   .attr("d",gloomhavenLine(records))
+   .datum(records) // 10. Binds data to the line 
+   .attr("class", "line") // Assign a class for styling 
+   .attr("d", gloomhavenLine)
+   .attr("stroke", colors[4]);
+
+  svg.append("path")
+   .attr("d",magictheGatheringLine(records))
+   .datum(records) // 10. Binds data to the line 
+   .attr("class", "line") // Assign a class for styling 
+   .attr("d", magictheGatheringLine)
+   .attr("stroke", colors[5]);
+
+  svg.append("path")
+   .attr("d",dixitLine(records))
+   .datum(records) // 10. Binds data to the line 
+   .attr("class", "line") // Assign a class for styling 
+   .attr("d", dixitLine).attr("stroke", colors[6]);
+
+  svg.append("path")
+   .attr("d",monopolyLine(records))
+   .datum(records) // 10. Binds data to the line 
+   .attr("class", "line") // Assign a class for styling 
+   .attr("d", monopolyLine)
+   .attr("stroke", colors[7]);
+
+
+  var elem = svg.selectAll(".dot")
+    .data(records)
+    .enter();
+
+  elem.append("circle") // Uses the enter().append() method
+    .attr("class", "dot") // Assign a class for styling
+    .attr("cx", function(d,i) { if((i-2)%3==0) return xScale(d.date)})
+    .attr("cy", function(d,i) { if((i-2)%3==0) return yScale(d.catan_count)})
+    .attr("r", function(d,i) { if((i-2)%3==0){ return 15; }else {return 0;}})
+    .attr("stroke",colors[0])
+    .attr("fill",colors[0]);
+
+  elem.append("text")
+    .text(function(d,i) {if((i-2)%3==0) return d.catan_rank})
+    .attr("text-anchor","middle")
+    .attr("font-size","10")
+    .attr("transform",function(d) { return "translate("+xScale(d.date) + "," + yScale(d.catan_count) + ")"});
+
+
+/*  var codenamesElem = svg.selectAll(".dot")
+    .data(records)
+    .enter();*/
+
+  elem.append("circle") // Uses the enter().append() method
+    .attr("class", "dot") // Assign a class for styling
+    .attr("cx", function(d,i) { if((i-2)%3==0) return xScale(d.date)})
+    .attr("cy", function(d,i) { if((i-2)%3==0) return yScale(d.codenames_count)})
+    .attr("r", function(d,i) { if((i-2)%3==0){ return 15; }else {return 0;}})
+    .attr("stroke",colors[2])
+    .attr("fill",colors[2]);
+
+  elem.append("text")
+    .text(function(d,i) {if((i-2)%3==0) return d.codenames_rank})
+    .attr("text-anchor","middle")
+    .attr("font-size","10")
+    .attr("transform",function(d) { return "translate("+xScale(d.date) + "," + yScale(d.codenames_count) + ")"});
+
+
+
+/*  var terraformingElem = svg.selectAll(".dot")
+    .data(records)
+    .enter();*/
+
+  elem.append("circle") // Uses the enter().append() method
+    .attr("class", "dot") // Assign a class for styling
+    .attr("cx", function(d,i) { if((i-2)%3==0) return xScale(d.date)})
+    .attr("cy", function(d,i) { if((i-2)%3==0) return yScale(d.terraforming_mars_count)})
+    .attr("r", function(d,i) { if((i-2)%3==0){ return 15; }else {return 0;}})
+    .attr("stroke",colors[3])
+    .attr("fill",colors[3]);
+
+  elem.append("text")
+    .text(function(d,i) {if((i-2)%3==0) return d.terraforming_mars_rank})
+    .attr("text-anchor","middle")
+    .attr("font-size","10")
+    .attr("transform",function(d) { return "translate("+xScale(d.date) + "," + yScale(d.terraforming_mars_count) + ")"});
+
+
+
+
+/*  var gloomhavenElem = svg.selectAll(".dot")
+    .data(records)
+    .enter();*/
+
+  elem.append("circle") // Uses the enter().append() method
+    .attr("class", "dot") // Assign a class for styling
+    .attr("cx", function(d,i) { if((i-2)%3==0) return xScale(d.date)})
+    .attr("cy", function(d,i) { if((i-2)%3==0) return yScale(d.gloomhaven_count)})
+    .attr("r", function(d,i) { if((i-2)%3==0){ return 15; }else {return 0;}})
+    .attr("stroke",colors[4])
+    .attr("fill",colors[4]);
+
+  elem.append("text")
+    .text(function(d,i) {if((i-2)%3==0) return d.gloomhaven_rank})
+    .attr("text-anchor","middle")
+    .attr("font-size","10")
+    .attr("transform",function(d) { return "translate("+xScale(d.date) + "," + yScale(d.gloomhaven_count) + ")"});
+
+
+ svg.append("circle")
+    .attr("cx",width+30)
+    .attr("cy",height)
+    .attr("r",20)
+    .attr("stroke","black")
+    .attr("fill","black");
+
+
+svg.append("text")
+    .attr("text-anchor","middle")
+    .attr("transform","translate("+(width+30) + "," + (height) + ")")
+    .attr("fill","white")
+    .text("rank");
+
+svg.append("text")
+    .attr("text-anchor","middle")
+    .attr("transform","translate("+(width+22) + "," + (height+30) + ")")
+    .attr("font-size","10")
+    .text("BoardGameGeek Rank");
+
+
+
+
+
+
+
+}).catch(function(error) {
+  console.log(error);
+});
+  
+</script>
+
+<!-- part 3.C-1 -->
+<script type="text/javascript">
+
+
+  //reading dataset
+  d3.dsv(",", "boardgame_ratings.csv", function(d) {
+  return {
+    date: Date.parse(d.date),
+    catan_count: parseInt(d['Catan=count']),
+    catan_rank: parseInt(d['Catan=rank']),
+    dominion_count: parseInt(d['Dominion=count']),
+    dominion_rank: d['Dominion=rank'],
+    codenames_count: d['Codenames=count'],
+    codenames_rank: d['Codenames=rank'],
+    terraforming_mars_count: d['Terraforming Mars=count'],
+    terraforming_mars_rank: d['Terraforming Mars=rank'],
+    gloomhaven_count: d['Gloomhaven=count'],
+    gloomhaven_rank: d['Gloomhaven=rank'],
+    magic_the_gathering_count: d['Magic: The Gathering=count'],
+    magic_the_gathering_rank: d['Magic: The Gathering=rank'],
+    dixit_count: d['Dixit=count'],
+    dixit_rank: d['Dixit=rank'],
+    monopoly_count: d['Monopoly=count'],
+    monopoly_rank: d['Monopoly=rank']
+  }
+}).then(function(data) {
+  var records = data;
+
+  // 2. Use the margin convention practice 
+  var margin = {top: 40, right: 70, bottom: 40, left: 60}
+  , width = 740 - margin.left - margin.right // Use the window's width 
+  , height = 400 - margin.top - margin.bottom; // Use the window's height
+
+
+  var xScale = d3.scaleTime()
+  .domain(d3.extent(data, function(d) { 
+    return new Date(d.date); 
+  }))
+  .range([0, width]);
+
+// 6. Y scale will use the randomly generate number 
+  var yScale = d3.scaleSqrt()
+    .domain([0, 100000]) // input 
+    .range([height, 0]); // output 
+
+  var catanLine = d3.line()
+    .x(function(d) { return xScale(d.date); }) // set the x values for the line generator
+    .y(function(d) { return yScale(d.catan_count); }) // set the y values for the line generator 
+    .curve(d3.curveMonotoneX)
+
+
+  var dominionLine = d3.line()
+    .x(function(d) { return xScale(d.date); }) // set the x values for the line generator
+    .y(function(d) { return yScale(d.dominion_count); }) // set the y values for the line generator 
+    .curve(d3.curveMonotoneX)
+
+  var codenamesLine = d3.line()
+    .x(function(d) { return xScale(d.date); }) // set the x values for the line generator
+    .y(function(d) { return yScale(d.codenames_count); }) // set the y values for the line generator 
+    .curve(d3.curveMonotoneX)
+
+  var terraformingMarsLine = d3.line()
+    .x(function(d) { return xScale(d.date); }) // set the x values for the line generator
+    .y(function(d) { return yScale(d.terraforming_mars_count); }) // set the y values for the line generator 
+    .curve(d3.curveMonotoneX)
+
+  var gloomhavenLine = d3.line()
+    .x(function(d) { return xScale(d.date); }) // set the x values for the line generator
+    .y(function(d) { return yScale(d.gloomhaven_count); }) // set the y values for the line generator 
+    .curve(d3.curveMonotoneX)
+
+  var magictheGatheringLine = d3.line()
+    .x(function(d) { return xScale(d.date); }) // set the x values for the line generator
+    .y(function(d) { return yScale(d.magic_the_gathering_count); }) // set the y values for the line generator 
+    .curve(d3.curveMonotoneX)
+
+  var dixitLine = d3.line()
+    .x(function(d) { return xScale(d.date); }) // set the x values for the line generator
+    .y(function(d) { return yScale(d.dixit_count); }) // set the y values for the line generator 
+    .curve(d3.curveMonotoneX)
+
+  var monopolyLine = d3.line()
+    .x(function(d) { return xScale(d.date); }) // set the x values for the line generator
+    .y(function(d) { return yScale(d.monopoly_count); }) // set the y values for the line generator 
+    .curve(d3.curveMonotoneX)
+
+  var svg = d3.select("body").append("svg")
+    .attr("width", width + margin.left + margin.right)
+    .attr("height", height + margin.top + margin.bottom)
+    .append("g")
+    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+
+
+  svg.append("g")
+    //.attr("class", "x axis")
+    .attr("transform", "translate(0," + height + ")")
+    .call(d3.axisBottom(xScale)
+      .tickFormat(d3.timeFormat("%b %y"))); // Create an axis component with d3.axisBottom
+
+  svg.append("text")
+    .attr("text-anchor","middle")
+    .attr("transform","translate("+(width/2) + "," + (height+40) + ")")
+    .text("Month");
+
+
+  svg.append("text")
+    .attr("text-anchor","middle")
+    .attr("transform","translate("+(-45) + "," + (height/2) + ")rotate(-90)")
+    .text("Num of Ratings");
+  
+  // 4. Call the y axis in a group tag
+  svg.append("g")
+    .attr("class", "y axis")
+    .call(d3.axisLeft(yScale)); // Create an axis component with d3.axisLeft
+
+  //console.log(records)
+
+  var colors = d3.schemeCategory10
+
+  console.log(colors)
+  svg.append("path")
+   .attr("d",catanLine(records))
+   .datum(records) // 10. Binds data to the line 
+   .attr("class", "line") // Assign a class for styling 
+   .attr("d", catanLine)
+   .attr("stroke", colors[0]); // 11. Calls the line generator */
+
+  svg.append("path")
+   .attr("d",dominionLine(records))
+   .datum(records) // 10. Binds data to the line 
+   .attr("class", "line") // Assign a class for styling 
+   .attr("d", dominionLine)
+   .attr("stroke", colors[1]);
+
+  svg.append("path")
+   .attr("d",codenamesLine(records))
+   .datum(records) // 10. Binds data to the line 
+   .attr("class", "line") // Assign a class for styling 
+   .attr("d", codenamesLine)
+   .attr("stroke", colors[2]);
+
+  svg.append("path")
+   .attr("d",terraformingMarsLine(records))
+   .datum(records) // 10. Binds data to the line 
+   .attr("class", "line") // Assign a class for styling 
+   .attr("d", terraformingMarsLine)
+   .attr("stroke", colors[3]);
+
+  svg.append("path")
+   .attr("d",gloomhavenLine(records))
+   .datum(records) // 10. Binds data to the line 
+   .attr("class", "line") // Assign a class for styling 
+   .attr("d", gloomhavenLine)
+   .attr("stroke", colors[4]);
+
+  svg.append("path")
+   .attr("d",magictheGatheringLine(records))
+   .datum(records) // 10. Binds data to the line 
+   .attr("class", "line") // Assign a class for styling 
+   .attr("d", magictheGatheringLine)
+   .attr("stroke", colors[5]);
+
+  svg.append("path")
+   .attr("d",dixitLine(records))
+   .datum(records) // 10. Binds data to the line 
+   .attr("class", "line") // Assign a class for styling 
+   .attr("d", dixitLine).attr("stroke", colors[6]);
+
+  svg.append("path")
+   .attr("d",monopolyLine(records))
+   .datum(records) // 10. Binds data to the line 
+   .attr("class", "line") // Assign a class for styling 
+   .attr("d", monopolyLine)
+   .attr("stroke", colors[7]);
+
+
+  var elem = svg.selectAll(".dot")
+    .data(records)
+    .enter();
+
+  elem.append("circle") // Uses the enter().append() method
+    .attr("class", "dot") // Assign a class for styling
+    .attr("cx", function(d,i) { if((i-2)%3==0) return xScale(d.date)})
+    .attr("cy", function(d,i) { if((i-2)%3==0) return yScale(d.catan_count)})
+    .attr("r", function(d,i) { if((i-2)%3==0){ return 15; }else {return 0;}})
+    .attr("stroke",colors[0])
+    .attr("fill",colors[0]);
+
+  elem.append("text")
+    .text(function(d,i) {if((i-2)%3==0) return d.catan_rank})
+    .attr("text-anchor","middle")
+    .attr("font-size","10")
+    .attr("transform",function(d) { return "translate("+xScale(d.date) + "," + yScale(d.catan_count) + ")"});
+
+
+/*  var codenamesElem = svg.selectAll(".dot")
+    .data(records)
+    .enter();*/
+
+  elem.append("circle") // Uses the enter().append() method
+    .attr("class", "dot") // Assign a class for styling
+    .attr("cx", function(d,i) { if((i-2)%3==0) return xScale(d.date)})
+    .attr("cy", function(d,i) { if((i-2)%3==0) return yScale(d.codenames_count)})
+    .attr("r", function(d,i) { if((i-2)%3==0){ return 15; }else {return 0;}})
+    .attr("stroke",colors[2])
+    .attr("fill",colors[2]);
+
+  elem.append("text")
+    .text(function(d,i) {if((i-2)%3==0) return d.codenames_rank})
+    .attr("text-anchor","middle")
+    .attr("font-size","10")
+    .attr("transform",function(d) { return "translate("+xScale(d.date) + "," + yScale(d.codenames_count) + ")"});
+
+
+
+/*  var terraformingElem = svg.selectAll(".dot")
+    .data(records)
+    .enter();*/
+
+  elem.append("circle") // Uses the enter().append() method
+    .attr("class", "dot") // Assign a class for styling
+    .attr("cx", function(d,i) { if((i-2)%3==0) return xScale(d.date)})
+    .attr("cy", function(d,i) { if((i-2)%3==0) return yScale(d.terraforming_mars_count)})
+    .attr("r", function(d,i) { if((i-2)%3==0){ return 15; }else {return 0;}})
+    .attr("stroke",colors[3])
+    .attr("fill",colors[3]);
+
+  elem.append("text")
+    .text(function(d,i) {if((i-2)%3==0) return d.terraforming_mars_rank})
+    .attr("text-anchor","middle")
+    .attr("font-size","10")
+    .attr("transform",function(d) { return "translate("+xScale(d.date) + "," + yScale(d.terraforming_mars_count) + ")"});
+
+
+
+
+/*  var gloomhavenElem = svg.selectAll(".dot")
+    .data(records)
+    .enter();*/
+
+  elem.append("circle") // Uses the enter().append() method
+    .attr("class", "dot") // Assign a class for styling
+    .attr("cx", function(d,i) { if((i-2)%3==0) return xScale(d.date)})
+    .attr("cy", function(d,i) { if((i-2)%3==0) return yScale(d.gloomhaven_count)})
+    .attr("r", function(d,i) { if((i-2)%3==0){ return 15; }else {return 0;}})
+    .attr("stroke",colors[4])
+    .attr("fill",colors[4]);
+
+  elem.append("text")
+    .text(function(d,i) {if((i-2)%3==0) return d.gloomhaven_rank})
+    .attr("text-anchor","middle")
+    .attr("font-size","10")
+    .attr("transform",function(d) { return "translate("+xScale(d.date) + "," + yScale(d.gloomhaven_count) + ")"});
+
+
+ svg.append("circle")
+    .attr("cx",width+30)
+    .attr("cy",height)
+    .attr("r",20)
+    .attr("stroke","black")
+    .attr("fill","black");
+
+
+svg.append("text")
+    .attr("text-anchor","middle")
+    .attr("transform","translate("+(width+30) + "," + (height) + ")")
+    .attr("fill","white")
+    .text("rank");
+
+svg.append("text")
+    .attr("text-anchor","middle")
+    .attr("transform","translate("+(width+22) + "," + (height+30) + ")")
+    .attr("font-size","10")
+    .text("BoardGameGeek Rank");
+
+
+
+
+
+
+
+}).catch(function(error) {
+  console.log(error);
+});
+  
+</script>
+
+<!-- part 3.C-2 -->
+<script type="text/javascript">
+
+  //reading dataset
+  d3.dsv(",", "boardgame_ratings.csv", function(d) {
+  return {
+    date: Date.parse(d.date),
+    catan_count: parseInt(d['Catan=count']),
+    catan_rank: parseInt(d['Catan=rank']),
+    dominion_count: parseInt(d['Dominion=count']),
+    dominion_rank: d['Dominion=rank'],
+    codenames_count: d['Codenames=count'],
+    codenames_rank: d['Codenames=rank'],
+    terraforming_mars_count: d['Terraforming Mars=count'],
+    terraforming_mars_rank: d['Terraforming Mars=rank'],
+    gloomhaven_count: d['Gloomhaven=count'],
+    gloomhaven_rank: d['Gloomhaven=rank'],
+    magic_the_gathering_count: d['Magic: The Gathering=count'],
+    magic_the_gathering_rank: d['Magic: The Gathering=rank'],
+    dixit_count: d['Dixit=count'],
+    dixit_rank: d['Dixit=rank'],
+    monopoly_count: d['Monopoly=count'],
+    monopoly_rank: d['Monopoly=rank']
+  }
+}).then(function(data) {
+  var records = data;
+
+  // 2. Use the margin convention practice 
+  var margin = {top: 40, right: 70, bottom: 40, left: 60}
+  , width = 740 - margin.left - margin.right // Use the window's width 
+  , height = 400 - margin.top - margin.bottom; // Use the window's height
+
+
+
+// The number of datapoints
+  var n = records.count;
+
+// 5. X scale will use the index of our data
+  /*var xScale = d3.scaleTime()
+    .domain([new Date("2016-11-01"), new Date("2020-08-01")])
+    .range(0,width);
+    */
+
+  var xScale = d3.scaleTime()
+  .domain(d3.extent(data, function(d) { 
+    return new Date(d.date); 
+  }))
+  .range([0, width]);
+
+  console.log(new Date("2016-11-01"));
+
+// 6. Y scale will use the randomly generate number 
+  var yScale = d3.scaleLog()
+    .domain([1, 100000]) // input 
+    .range([height, 1]); // output 
+
+  var catanLine = d3.line()
+    .x(function(d) { return xScale(d.date); }) // set the x values for the line generator
+    .y(function(d) { return yScale(d.catan_count); }) // set the y values for the line generator 
+    .curve(d3.curveMonotoneX)
+
+
+  var dominionLine = d3.line()
+    .x(function(d) { return xScale(d.date); }) // set the x values for the line generator
+    .y(function(d) { return yScale(d.dominion_count); }) // set the y values for the line generator 
+    .curve(d3.curveMonotoneX)
+
+  var codenamesLine = d3.line()
+    .x(function(d) { return xScale(d.date); }) // set the x values for the line generator
+    .y(function(d) { return yScale(d.codenames_count); }) // set the y values for the line generator 
+    .curve(d3.curveMonotoneX)
+
+  var terraformingMarsLine = d3.line()
+    .x(function(d) { return xScale(d.date); }) // set the x values for the line generator
+    .y(function(d) { return yScale(d.terraforming_mars_count); }) // set the y values for the line generator 
+    .curve(d3.curveMonotoneX)
+
+  var gloomhavenLine = d3.line()
+    .x(function(d) { return xScale(d.date); }) // set the x values for the line generator
+    .y(function(d) { return yScale(d.gloomhaven_count); }) // set the y values for the line generator 
+    .curve(d3.curveMonotoneX)
+
+  var magictheGatheringLine = d3.line()
+    .x(function(d) { return xScale(d.date); }) // set the x values for the line generator
+    .y(function(d) { return yScale(d.magic_the_gathering_count); }) // set the y values for the line generator 
+    .curve(d3.curveMonotoneX)
+
+  var dixitLine = d3.line()
+    .x(function(d) { return xScale(d.date); }) // set the x values for the line generator
+    .y(function(d) { return yScale(d.dixit_count); }) // set the y values for the line generator 
+    .curve(d3.curveMonotoneX)
+
+  var monopolyLine = d3.line()
+    .x(function(d) { return xScale(d.date); }) // set the x values for the line generator
+    .y(function(d) { return yScale(d.monopoly_count); }) // set the y values for the line generator 
+    .curve(d3.curveMonotoneX)
+
+  var svg = d3.select("body").append("svg")
+    .attr("width", width + margin.left + margin.right)
+    .attr("height", height + margin.top + margin.bottom)
+    .append("g")
+    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+
+
+  svg.append("g")
+    //.attr("class", "x axis")
+    .attr("transform", "translate(0," + height + ")")
+    .call(d3.axisBottom(xScale)
+      .tickFormat(d3.timeFormat("%b %y"))); // Create an axis component with d3.axisBottom
+
+  svg.append("text")
+    .attr("text-anchor","middle")
+    .attr("transform","translate("+(width/2) + "," + (height+40) + ")")
+    .text("Month");
+
+
+  svg.append("text")
+    .attr("text-anchor","middle")
+    .attr("transform","translate("+(-45) + "," + (height/2) + ")rotate(-90)")
+    .text("Num of Ratings");
+  
+  // 4. Call the y axis in a group tag
+  svg.append("g")
+    .attr("class", "y axis")
+    .call(d3.axisLeft(yScale)); // Create an axis component with d3.axisLeft
+
+  //console.log(records)
+
+  var colors = d3.schemeCategory10
+
+  console.log(colors)
+  svg.append("path")
+   .attr("d",catanLine(records))
+   .datum(records) // 10. Binds data to the line 
+   .attr("class", "line") // Assign a class for styling 
+   .attr("d", catanLine)
+   .attr("stroke", colors[0]); // 11. Calls the line generator */
+
+  svg.append("path")
+   .attr("d",dominionLine(records))
+   .datum(records) // 10. Binds data to the line 
+   .attr("class", "line") // Assign a class for styling 
+   .attr("d", dominionLine)
+   .attr("stroke", colors[1]);
+
+  svg.append("path")
+   .attr("d",codenamesLine(records))
+   .datum(records) // 10. Binds data to the line 
+   .attr("class", "line") // Assign a class for styling 
+   .attr("d", codenamesLine)
+   .attr("stroke", colors[2]);
+
+  svg.append("path")
+   .attr("d",terraformingMarsLine(records))
+   .datum(records) // 10. Binds data to the line 
+   .attr("class", "line") // Assign a class for styling 
+   .attr("d", terraformingMarsLine)
+   .attr("stroke", colors[3]);
+
+  svg.append("path")
+   .attr("d",gloomhavenLine(records))
+   .datum(records) // 10. Binds data to the line 
+   .attr("class", "line") // Assign a class for styling 
+   .attr("d", gloomhavenLine)
+   .attr("stroke", colors[4]);
+
+  svg.append("path")
+   .attr("d",magictheGatheringLine(records))
+   .datum(records) // 10. Binds data to the line 
+   .attr("class", "line") // Assign a class for styling 
+   .attr("d", magictheGatheringLine)
+   .attr("stroke", colors[5]);
+
+  svg.append("path")
+   .attr("d",dixitLine(records))
+   .datum(records) // 10. Binds data to the line 
+   .attr("class", "line") // Assign a class for styling 
+   .attr("d", dixitLine).attr("stroke", colors[6]);
+
+  svg.append("path")
+   .attr("d",monopolyLine(records))
+   .datum(records) // 10. Binds data to the line 
+   .attr("class", "line") // Assign a class for styling 
+   .attr("d", monopolyLine)
+   .attr("stroke", colors[7]);
+
+
+  var elem = svg.selectAll(".dot")
+    .data(records)
+    .enter();
+
+  elem.append("circle")
+    .attr("class", "dot")
+    .attr("cx", function(d,i) { if((i-2)%3==0) return xScale(d.date)})
+    .attr("cy", function(d,i) { if((i-2)%3==0) return yScale(d.catan_count)})
+    .attr("r", function(d,i) { if((i-2)%3==0){ return 15; }else {return 0;}})
+    .attr("stroke",colors[0])
+    .attr("fill",colors[0]);
+
+  elem.append("text")
+    .text(function(d,i) {if((i-2)%3==0) return d.catan_rank})
+    .attr("text-anchor","middle")
+    .attr("font-size","10")
+    .attr("transform",function(d) { return "translate("+xScale(d.date) + "," + yScale(d.catan_count) + ")"});
+
+
+  elem.append("circle") // Uses the enter().append() method
+    .attr("class", "dot") // Assign a class for styling
+    .attr("cx", function(d,i) { if((i-2)%3==0) return xScale(d.date)})
+    .attr("cy", function(d,i) { if((i-2)%3==0) return yScale(d.codenames_count)})
+    .attr("r", function(d,i) { if((i-2)%3==0){ return 15; }else {return 0;}})
+    .attr("stroke",colors[2])
+    .attr("fill",colors[2]);
+
+  elem.append("text")
+    .text(function(d,i) {if((i-2)%3==0) return d.codenames_rank})
+    .attr("text-anchor","middle")
+    .attr("font-size","10")
+    .attr("transform",function(d) { return "translate("+xScale(d.date) + "," + yScale(d.codenames_count) + ")"});
+
+
+  elem.append("circle")
+    .attr("class", "dot")
+    .attr("cx", function(d,i) { if((i-2)%3==0) return xScale(d.date)})
+    .attr("cy", function(d,i) { if((i-2)%3==0) return yScale(d.terraforming_mars_count)})
+    .attr("r", function(d,i) { if((i-2)%3==0){ return 15; }else {return 0;}})
+    .attr("stroke",colors[3])
+    .attr("fill",colors[3]);
+
+  elem.append("text")
+    .text(function(d,i) {if((i-2)%3==0) return d.terraforming_mars_rank})
+    .attr("text-anchor","middle")
+    .attr("font-size","10")
+    .attr("transform",function(d) { return "translate("+xScale(d.date) + "," + yScale(d.terraforming_mars_count) + ")"});
+
+
+  elem.append("circle") // Uses the enter().append() method
+    .attr("class", "dot") // Assign a class for styling
+    .attr("cx", function(d,i) { if((i-2)%3==0) return xScale(d.date)})
+    .attr("cy", function(d,i) { if((i-2)%3==0) return yScale(d.gloomhaven_count)})
+    .attr("r", function(d,i) { if((i-2)%3==0){ return 15; }else {return 0;}})
+    .attr("stroke",colors[4])
+    .attr("fill",colors[4]);
+
+  elem.append("text")
+    .text(function(d,i) {if((i-2)%3==0) return d.gloomhaven_rank})
+    .attr("text-anchor","middle")
+    .attr("font-size","10")
+    .attr("transform",function(d) { return "translate("+xScale(d.date) + "," + yScale(d.gloomhaven_count) + ")"});
+
+
+ svg.append("circle")
+    .attr("cx",width+30)
+    .attr("cy",height)
+    .attr("r",20)
+    .attr("stroke","black")
+    .attr("fill","black");
+
+
+svg.append("text")
+    .attr("text-anchor","middle")
+    .attr("transform","translate("+(width+30) + "," + (height) + ")")
+    .attr("fill","white")
+    .text("rank");
+
+svg.append("text")
+    .attr("text-anchor","middle")
+    .attr("transform","translate("+(width+22) + "," + (height+30) + ")")
+    .attr("font-size","10")
+    .text("BoardGameGeek Rank");
+
+  svg.append("text")
+      .attr("transform", "translate("+(width-20)+","+(height + 60)+")")
+      .attr("font-size", "15px")
+      .attr("text-anchor", "middle")
+      .style("fill", "black")
+      .style("font-weight","bold")
+      .text("lpant3");
+
+
+}).catch(function(error) {
+  console.log(error);
+});
+  
+</script>
